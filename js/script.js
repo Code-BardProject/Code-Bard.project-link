@@ -1,18 +1,5 @@
+ 
 // js/script.js
-// Load navigation menu
-function loadNav() {
-    const path = window.location.pathname.includes('/container/') ? 'nav.html' : 'container/nav.html';
-    fetch(path)
-        .then(response => {
-            if (!response.ok) throw new Error('Failed to load nav.html');
-            return response.text();
-        })
-        .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading nav:', error));
-}
-
 // Toggle hamburger menu
 function toggleMenu() {
     const navLinks = document.getElementById('navLinks');
@@ -21,8 +8,6 @@ function toggleMenu() {
 
 // Modal functionality for projects
 document.addEventListener('DOMContentLoaded', () => {
-    loadNav();
-
     const modal = document.getElementById('videoModal');
     if (modal) {
         const videoFrame = document.getElementById('videoFrame');
@@ -52,4 +37,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-});
+}); 
