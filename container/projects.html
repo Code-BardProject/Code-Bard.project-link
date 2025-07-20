@@ -1,3 +1,4 @@
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,18 +8,33 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <div id="nav-placeholder"></div>
+    <nav>
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo">
+            <span>My Code - Bard Project</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="../index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
     <main>
         <section>
             <h1>Our Projects</h1>
             <p>Discover our collection of 25 innovative coding projects, showcasing creativity and technical expertise.</p>
             <div class="projects-grid">
                 <div class="project-card">
-                    <img src="../img/project1.jpg" alt="Project 1">
+                    <img src="/img/project1.jpg" alt="Project 1">
                     <h3>Project 1</h3>
                     <p>An innovative coding project that pushes boundaries.</p>
                     <div class="project-buttons">
-                        <button class="watch-btn" data-video="../video/project/video1.mp4">Watch</button>
+                        <button class="watch-btn" data-video="/video/project/video1.mp4">Watch</button>
                         <a href="projects/downloads/project1.zip" download class="download-btn">Download</a>
                     </div>
                 </div>
@@ -27,7 +43,7 @@
                     <h3>Project 2</h3>
                     <p>A creative solution built with modern technologies.</p>
                     <div class="project-buttons">
-                        <button class="watch-btn" data-video="../video/project/video2.mp4">Watch</button>
+                        <button class="watch-btn" data-video="/video/project/video2.mp4">Watch</button>
                         <a href="projects/downloads/project2.zip" download class="download-btn">Download</a>
                     </div>
                 </div>
@@ -36,7 +52,7 @@
                     <h3>Project 3</h3>
                     <p>Combining art and code for a unique experience.</p>
                     <div class="project-buttons">
-                        <button class="watch-btn" data-video="../video/project/video3.mp4">Watch</button>
+                        <button class="watch-btn" data-video="/video/project/video3.mp4">Watch</button>
                         <a href="projects/downloads/project3.zip" download class="download-btn">Download</a>
                     </div>
                 </div>
@@ -45,7 +61,7 @@
                     <h3>Project 4</h3>
                     <p>Interactive web app with dynamic features.</p>
                     <div class="project-buttons">
-                        <button class="watch-btn" data-video="../video/project/video4.mp4">Watch</button>
+                        <button class="watch-btn" data-video="/video/project/video4.mp4">Watch</button>
                         <a href="projects/downloads/project4.zip" download class="download-btn">Download</a>
                     </div>
                 </div>
@@ -54,7 +70,7 @@
                     <h3>Project 5</h3>
                     <p>AI-powered visualization tool.</p>
                     <div class="project-buttons">
-                        <button class="watch-btn" data-video="../video/project/video5.mp4">Watch</button>
+                        <button class="watch-btn" data-video="/video/project/video5.mp4">Watch</button>
                         <a href="projects/downloads/project5.zip" download class="download-btn">Download</a>
                     </div>
                 </div>
@@ -63,7 +79,7 @@
                     <h3>Project 6</h3>
                     <p>Game developed with Unity.</p>
                     <div class="project-buttons">
-                        <button class="watch-btn" data-video="../video/project/video6.mp4">Watch</button>
+                        <button class="watch-btn" data-video="/video/project/video6.mp4">Watch</button>
                         <a href="projects/downloads/project6.zip" download class="download-btn">Download</a>
                     </div>
                 </div>
@@ -72,7 +88,7 @@
                     <h3>Project 7</h3>
                     <p>Augmented reality experiment.</p>
                     <div class="project-buttons">
-                        <button class="watch-btn" data-video="../video/project/video7.mp4">Watch</button>
+                        <button class="watch-btn" data-video="/video/project/video7.mp4">Watch</button>
                         <a href="projects/downloads/project7.zip" download class="download-btn">Download</a>
                     </div>
                 </div>
@@ -81,7 +97,7 @@
                     <h3>Project 8</h3>
                     <p>Blockchain-based application.</p>
                     <div class="project-buttons">
-                        <button class="watch-btn" data-video="../video/project/video8.mp4">Watch</button>
+                        <button class="watch-btn" data-video="/video/project/video8.mp4">Watch</button>
                         <a href="projects/downloads/project8.zip" download class="download-btn">Download</a>
                     </div>
                 </div>
@@ -90,7 +106,7 @@
                     <h3>Project 9</h3>
                     <p>Creative data visualization dashboard.</p>
                     <div class="project-buttons">
-                        <button class="watch-btn" data-video="../video/project/video9.mp4">Watch</button>
+                        <button class="watch-btn" data-video="/video/project/video9.mp4">Watch</button>
                         <a href="projects/downloads/project9.zip" download class="download-btn">Download</a>
                     </div>
                 </div>
@@ -99,7 +115,7 @@
                     <h3>Project 10</h3>
                     <p>Mobile app with React Native.</p>
                     <div class="project-buttons">
-                        <button class="watch-btn" data-video="../video/project/video10.mp4">Watch</button>
+                        <button class="watch-btn" data-video="/video/project/video10.mp4">Watch</button>
                         <a href="projects/downloads/project10.zip" download class="download-btn">Download</a>
                     </div>
                 </div>
@@ -108,7 +124,7 @@
                     <h3>Project 11</h3>
                     <p>Interactive 3D model viewer.</p>
                     <div class="project-buttons">
-                        <button class="watch-btn" data-video="../video/project/video11.mp4">Watch</button>
+                        <button class="watch-btn" data-video="/video/project/video11.mp4">Watch</button>
                         <a href="projects/downloads/project11.zip" download class="download-btn">Download</a>
                     </div>
                 </div>
@@ -117,16 +133,16 @@
                     <h3>Project 12</h3>
                     <p>Real-time chat application.</p>
                     <div class="project-buttons">
-                        <button class="watch-btn" data-video="../video/project/video12.mp4">Watch</button>
+                        <button class="watch-btn" data-video="/video/project/video12.mp4">Watch</button>
                         <a href="projects/downloads/project12.zip" download class="download-btn">Download</a>
                     </div>
-                <!-- </div>
-                <div class="project-card">
+                </div>
+                <!-- <div class="project-card">
                     <img src="../img/project13.jpg" alt="Project 13">
                     <h3>Project 13</h3>
                     <p>E-commerce platform prototype.</p>
                     <div class="project-buttons">
-                        <button class="watch-btn" data-video="../video/project/video13.mp4">Watch</button>
+                        <button class="watch-btn" data-video="video/project/video13.mp4">Watch</button>
                         <a href="projects/downloads/project13.zip" download class="download-btn">Download</a>
                     </div>
                 </div>
@@ -135,7 +151,7 @@
                     <h3>Project 14</h3>
                     <p>Portfolio website template.</p>
                     <div class="project-buttons">
-                        <button class="watch-btn" data-video="../video/project/video14.mp4">Watch</button>
+                        <button class="watch-btn" data-video="video/project/video14.mp4">Watch</button>
                         <a href="projects/downloads/project14.zip" download class="download-btn">Download</a>
                     </div>
                 </div>
@@ -144,7 +160,7 @@
                     <h3>Project 15</h3>
                     <p>Weather app with API integration.</p>
                     <div class="project-buttons">
-                        <button class="watch-btn" data-video="../video/project/video15.mp4">Watch</button>
+                        <button class="watch-btn" data-video="video/project/video15.mp4">Watch</button>
                         <a href="projects/downloads/project15.zip" download class="download-btn">Download</a>
                     </div>
                 </div>
@@ -153,7 +169,7 @@
                     <h3>Project 16</h3>
                     <p>Task management tool.</p>
                     <div class="project-buttons">
-                        <button class="watch-btn" data-video="../video/project/video16.mp4">Watch</button>
+                        <button class="watch-btn" data-video="video/project/video16.mp4">Watch</button>
                         <a href="projects/downloads/project16.zip" download class="download-btn">Download</a>
                     </div>
                 </div>
@@ -162,7 +178,7 @@
                     <h3>Project 17</h3>
                     <p>Interactive quiz platform.</p>
                     <div class="project-buttons">
-                        <button class="watch-btn" data-video="../video/project/video17.mp4">Watch</button>
+                        <button class="watch-btn" data-video="video/project/video17.mp4">Watch</button>
                         <a href="projects/downloads/project17.zip" download class="download-btn">Download</a>
                     </div>
                 </div>
@@ -171,7 +187,7 @@
                     <h3>Project 18</h3>
                     <p>Fitness tracker app.</p>
                     <div class="project-buttons">
-                        <button class="watch-btn" data-video="../video/project/video18.mp4">Watch</button>
+                        <button class="watch-btn" data-video="video/project/video18.mp4">Watch</button>
                         <a href="projects/downloads/project18.zip" download class="download-btn">Download</a>
                     </div>
                 </div>
@@ -180,7 +196,7 @@
                     <h3>Project 19</h3>
                     <p>Inventory tracking system.</p>
                     <div class="project-buttons">
-                        <button class="watch-btn" data-video="../video/project/video19.mp4">Watch</button>
+                        <button class="watch-btn" data-video="video/project/video19.mp4">Watch</button>
                         <a href="projects/downloads/project19.zip" download class="download-btn">Download</a>
                     </div>
                 </div>
@@ -189,11 +205,55 @@
                     <h3>Project 20</h3>
                     <p>Music player with visualizations.</p>
                     <div class="project-buttons">
-                        <button class="watch-btn" data-video="../video/project/video20.mp4">Watch</button>
+                        <button class="watch-btn" data-video="video/project/video20.mp4">Watch</button>
                         <a href="projects/downloads/project20.zip" download class="download-btn">Download</a>
                     </div>
+                </div>
+                <div class="project-card">
+                    <img src="../img/project21.jpg" alt="Project 21">
+                    <h3>Project 21</h3>
+                    <p>Recipe app with search functionality.</p>
+                    <div class="project-buttons">
+                        <button class="watch-btn" data-video="video/project/video21.mp4">Watch</button>
+                        <a href="projects/downloads/project21.zip" download class="download-btn">Download</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="../img/project22.jpg" alt="Project 22">
+                    <h3>Project 22</h3>
+                    <p>Blog platform with CMS.</p>
+                    <div class="project-buttons">
+                        <button class="watch-btn" data-video="video/project/video22.mp4">Watch</button>
+                        <a href="projects/downloads/project22.zip" download class="download-btn">Download</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="../img/project23.jpg" alt="Project 23">
+                    <h3>Project 23</h3>
+                    <p>Social media dashboard.</p>
+                    <div class="project-buttons">
+                        <button class="watch-btn" data-video="video/project/video23.mp4">Watch</button>
+                        <a href="projects/downloads/project23.zip" download class="download-btn">Download</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="../img/project24.jpg" alt="Project 24">
+                    <h3>Project 24</h3>
+                    <p>Photo gallery with filters.</p>
+                    <div class="project-buttons">
+                        <button class="watch-btn" data-video="video/project/video24.mp4">Watch</button>
+                        <a href="projects/downloads/project24.zip" download class="download-btn">Download</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="../img/project25.jpg" alt="Project 25">
+                    <h3>Project 25</h3>
+                    <p>Virtual tour application.</p>
+                    <div class="project-buttons">
+                        <button class="watch-btn" data-video="video/project/video25.mp4">Watch</button>
+                        <a href="projects/downloads/project25.zip" download class="download-btn">Download</a>
+                    </div>
                 </div> -->
- 
             </div>
         </section>
     </main>
@@ -207,6 +267,7 @@
             </video>
         </div>
     </div>
-    <script src="../js/script.js"></script>
+    <script src="../js/script.js" defer ></script>
 </body>
 </html>
+ 
