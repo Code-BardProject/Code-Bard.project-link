@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,10 +8,25 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div id="nav-placeholder"></div>
+    <nav>
+        <div class="logo">
+            <img src="/img/logo.png" alt="Logo">
+            <span>My Code - Bard Project</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="container/about.html">About</a>
+            <a href="container/projects.html">Projects</a>
+            <a href="container/contact.html">Contact</a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
     <header>
         <video autoplay muted loop>
-            <source src="video/background-video.mp4" type="video/mp4">
+            <source src="container/video/background-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="header-content">
@@ -29,7 +45,7 @@
     <script src="js/script.js"></script>
 </body>
 </html>
- 
+
 
 
 
